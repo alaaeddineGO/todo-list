@@ -1,0 +1,55 @@
+@import './Sass/Mixit';
+.App{
+  width: 100%;
+  min-height: 100vh;
+  padding: 45px 0 0 0;
+  background: linear-gradient(132deg, #0035ff, #9d00ff80, #ff0000e0);
+}
+.container{
+  width: 60%;
+  min-height: 80%;
+  height: auto;
+  margin: auto;
+  background-color: transparent;
+  backdrop-filter: blur(25%);
+  box-shadow: 5px 1px 20px 0px #00000073;
+  border: 1px solid red;
+  border-radius: 15%;
+  text-align: center;
+  padding: 68px 37px;
+  h2{
+    @include font($f-fr,35px,700);
+    margin-bottom: 20px;
+  }
+  input{
+    width: 80%;
+  }
+  ul{
+    margin: 25px 0 0 25px;
+    line-height: 1.5rem;
+    .item{
+      background-color: antiquewhite;
+      padding: 5px 0;
+      border: none;
+      border-radius: 8px;
+      margin: 5px 0;
+      @include fcs;
+      li{
+        cursor: pointer;
+        width: fit-content;
+        max-width: 80%;
+        overflow-wrap: break-word;
+        list-style: "😎";
+        @include font($f-fr,20px,600);
+      }
+      .complited{
+        text-decoration: line-through;
+        list-style: "😉";
+      }
+      span{
+        cursor: pointer;
+      }
+    }
+
+  }
+}
